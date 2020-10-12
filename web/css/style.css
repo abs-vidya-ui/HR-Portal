@@ -1,0 +1,168 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing:border-box;
+	font-family: 'Roboto';
+
+
+}
+body{
+	overflow-x:hidden;
+}
+.bg-color {
+    background:  url(../images/background-image.jpg) no-repeat right top , linear-gradient(to right, #2c4b5f , #fff);
+    background-size: 465px;
+    background-size:50%;
+}
+.login{
+	width:370px;
+	height:300px;
+	background:#ffffff;
+	overflow-y:hidden;
+}
+.login-form{
+	width:90%;
+}
+.login-form h2{
+	color:#768a95;
+}
+.login-s{
+	width:73px;
+	height:23px;
+	line-height:8px !important;
+}
+
+.bg-h{
+	background-color:#febc5b;
+	min-height:51px;
+}
+.phone ,.mail ,.go-login{
+	padding-top:16px;
+	color:#ffffff;
+}
+.phone a , .mail a{
+	color:#ffffff;
+}
+.go-login a{
+	color:#ffffff;
+}
+.border1{
+	border-bottom:1px solid #ec4a23 !important;
+    font-size:10px !important;
+}
+.dropdown-toggle.last-menuitem::after{
+	display:none;
+}
+.dropdown-menu.show{
+	background-color:#ffbc57;
+}
+/* --------------------  Banner --------------------- */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .banner-txt{
+  position:absolute;
+  }
+  .banner-txt{
+  	position:absolute;
+  	top:0px;
+  	left:38%;
+  	font-size:40px;
+  }
+/* ------------- hr-business-tool ---------------- */
+.hr-business-tool{
+	min-height:590px;
+	background-color:#f6f6f6;
+}
+.hr-business-tool h2{
+	color:#171d33;
+}
+.business-tool-txt{
+	line-height:40px;
+	font-size:18px;
+	color:#080808;
+}
+/* -------------------- Leave -------------- */
+.leave{
+	 background:  url(../images/leave.jpg) no-repeat left top;
+	 min-height:412px;
+	 background-size:cover;
+}
+.leave-txt{
+	color:#ffffff;
+	line-height:30px;
+}
+
+/* ---------------- product-company ----------------------- */
+.product-company{
+	background-color:#fdce88;
+	min-height:400px;
+}
+
+.product-company h2{
+	font-weight:bold;
+	color:#3f3e5e!important;
+}
+.product-company ul{
+	list-style:none;
+}
+.product li ,.company li {
+	line-height:30px;
+	font-size:20px;
+}
+.product li a , .company li a{
+	color:#847a85;
+}
+/* --------------------- Footer --------------------- */
+.copy-right{
+	min-height:50px;
+	background-color:#febc5b;
+	color:#ffffff;
+}
+/* --------------------- Salary Letter ---------------------- */
+.salary-letter input ,.salary-transfer-letter input ,.Embasy-letter input ,.passport-updating input ,.complain-raise-concern input{
+	border:0px;
+}
+.cross-salary ,.deduction{
+	width:50%;
+	float:left;
+
+}
+.place , .stamp{
+	width:50%;
+	float:left;
+}
+section.link{
+	width:100%;
+	text-align: center;
+}
+section.link li{
+	display: inline-block;
+    text-align: center;
+    background-color: #fdce88;
+    padding: 10px;
+    border-radius: 23px;
+}
+section.link li a{
+	text-decoration:none;
+	color:#000000;
+}
+
+@media only screen and (max-width:768px) {
+.bg-color{
+	background-size:100%;
+}
+
+
+}
+
+@media only screen and (max-width: 640px) {
+	.login{
+		width:300px;
+
+	}
+	.banner-txt{
+		font-size:20px;
+	}
+}
