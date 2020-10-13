@@ -148,6 +148,9 @@ section.link li a{
 	text-decoration:none;
 	color:#000000;
 }
+.h-border{
+	border:1px dashed #000000;
+}
 
 @media only screen and (max-width:768px) {
 .bg-color{
