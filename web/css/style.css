@@ -27,11 +27,14 @@ body{
 	color:#768a95;
 }
 .login-s{
-	width:73px;
-	height:23px;
+	    width: 100px;
+    height: 30px
 	line-height:8px !important;
 }
-
+.login-s:hover{
+	background:#27465a;
+	color:#fff;
+}
 .bg-h{
 	background-color:#febc5b;
 	min-height:51px;
