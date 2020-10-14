@@ -151,6 +151,12 @@ section.link li a{
 .h-border{
 	border:1px dashed #000000;
 }
+.health-insurance ,.health-insurance-s,.childern,.note{
+	border:1px solid #ccc;
+	min-height:200px;
+	margin-top:10px;
+	padding:10px;
+}
 
 @media only screen and (max-width:768px) {
 .bg-color{
