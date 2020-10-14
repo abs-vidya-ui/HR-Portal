@@ -57,7 +57,7 @@ body{
 	background-color:#ffbc57;
 }
 .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+.grow:hover { transform: scale(3); }
 /* --------------------  Banner --------------------- */
 .carousel-inner img {
     width: 100%;
