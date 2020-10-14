@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Compensation</title>
+<title>Normal Leave</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -146,20 +146,37 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-8 mx-auto">
-    <h2 class="text-center pt-5">Compensation</h2>
-    <p>Date <input type="text" id="date" name="date" placeholder="---------------"></p>
-    <p>To:<input type="text" id="to" name="to" placeholder="Name and address of party with whom you have a dispute"></p>
-    <p>From <input type="text" id="from" name="from" placeholder="---------------">:</p>
-    <p>I am requesting compensation for the following problem:</p>
-    <p>(Describe in your own words exactly what happened.Specify dates , name of people with whom you dealt , and damaged you have suffered.)</p>
-      <p><textarea id="d-form" name="d-form" rows="4" cols="100"></textarea></p>
-      <p>please send me a check or money order in amount of $ <input type="text" id="money" name="money" placeholder="--------"> on or before  <input type="text" id="money-s" name="money-s" placeholder="--------">(specify date ). If i do not receive payment by this date , I will take this case to court immediatley, unless you notify me that you are willing to try to resolve dispute through mediation .In that case , I am willing to meet with a neutral third party agreed to by both of us in good faith attemept to resolve the dispute with court action.  </p>
-      <p>Thank you for your immediate attention to this matter.</p>
-      <p>Sincerely</p>
-      <p><input type="text" id="sig" name="sig" placeholder="---------------"><input type="text" id="p-name" name="p-name" placeholder="---------------"><input type="text" id="p-no" name="p-no" placeholder="---------------"></p>
-      <p>signature <span style="padding: 10px;
-    margin: 20px;">Print name</span> <span style="padding: 10px;
-    margin: 20px;">phone number</span></p>
+    <h2 class="text-center pt-5">Normal Leave</h2>
+    <div class="leave-request-form">
+      <h4 class="text-center">Leave request form</h4>
+      <p>Date <input type="date" name="date" id="date" ></p>
+      <table class="table table-bordered">
+      <tr>
+        <td>
+          Employee Name
+        </td>
+        <td>Department</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p>Reason for required leave:(please tick appropriate box)</p>
+          <p><input type="checkbox" id="Annual-leave" name="Annual-leave">Annual leave <input type="checkbox" id="Bereavement" name="Bereavement">Bereavement<input type="checkbox" id="Maternity" name="Maternity">Maternity leave<input type="checkbox" id="Other" name="Other">Other <input type="text" name="other" id="other" placeholder="-----------------"></p>
+
+          <p><input type="checkbox" id="sick-leave" name="sick-leave">Sick Leave<input type="checkbox" id="unpaid-leave" name="unpaid-leave">Unpaid Leave<input type="checkbox" id="parental-leave" name="parental-leave">Parental Leave</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p>Dates Requested : from <input type="date" name="date1" id="date1" >to<input type="date" name="date2" id="date2" > </p>
+        </td>
+      </tr>
+    </table>
+    <p class="float-right">Employee's Signature <input type="text" name="emp-sig" id="emp-sig" placeholder="-------------"></p><div class="clearfix"></div>
+    <p class="float-right">Manager / Supervisor Approval :<input type="checkbox" id="Approved" name="Approved">Approved<input type="checkbox" id="rejected" name="rejected"> Rejected</p>
+    <div class="clearfix"></div>
+    <textarea id="note-comment" name="note-comment" rows="4" cols="100" placeholder="Note/Comment"></textarea>
+    </div>
+
   <button type="button" class="btn btn-primary my-5 d-block mx-auto">Submit</button>
     </form>
     <div class="clearfix"></div>
