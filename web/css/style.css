@@ -43,6 +43,10 @@ body{
 .phone a , .mail a{
 	color:#ffffff;
 }
+.phone a:hover , .mail a:hover ,.go-login a:hover{
+	color:#ffffff;
+	text-decoration: none;
+}
 .go-login a{
 	color:#ffffff;
 }
