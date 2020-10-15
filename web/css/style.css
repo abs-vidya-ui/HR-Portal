@@ -56,7 +56,7 @@ body{
 }
 .border1{
 	border-bottom:1px solid #ec4a23 !important;
-    font-size:15px !important;
+    font-size:10px !important;
 }
 .dropdown-toggle.last-menuitem::after{
 	display:none;
