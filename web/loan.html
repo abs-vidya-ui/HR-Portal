@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Passport-updating</title>
+<title>Loan</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -146,16 +146,86 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-8 mx-auto">
-    <h2 class="text-center pt-5">Cash Advanced Request Form </h2>
+    <h2 class="text-center pt-5">Loan</h2>
     <form action="index.html" method="get">
-     <p>Date: <input type="text" id="Date" name="date" placeholder="-----------------------"></p>
-     <p>Name of Faculty / Staff member requesting Advance:</p>
-     <p><input type="text" name="faculty" id="faculty" placeholder="----------------------------"></p>
-     <p>Employee ID # <input type="text" name="Employee-ID" id="Employee-ID" placeholder="----------------------------"></p>
-     <p>Amount of Cash Advance: $<input type="text" name="cash-advanced" id="cash-advanced" placeholder="----------------------------"></p>
-     <p>Purpose of cash advanced</p>
-     <textarea id="Purpose" name="Purpose" rows="4" cols="100"></textarea>
-      <p>Date Cash Advanced is needed <input type="text" name="date-cash-advanced" id="date-cash-advanced" placeholder="----------------------------"></p>
+     <p>Format No. <input type="text" id="format" name="format" placeholder="-------------------">Doc. No.: <input type="text" id="doc" name="doc" placeholder="-------------------"> </p>
+     <p>Rev.No.<input type="text" id="Rev" name="Rev" placeholder="-------------------"> Rev . Date: <input type="text" id="Rev-date" name="Rev-date" placeholder="-------------------"></p>
+     <table class="table table-bordered">
+       <tr>
+         <td>Employee Code</td>
+         <td>Employee Name</td>
+         <td>Department</td>
+         <td>Designation </td>
+         <td>Date of Join</td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr>
+        <td colspan="4">Loan Details:</td>
+        <td> Requested Amount</td>
+       </tr>
+       <tr>
+        <td colspan="2">Loan Type</td>
+        <td>No.of Installment</td>
+        <td>Mode of Payment</td>
+        <td>Loan Required Date</td>
+       </tr>
+       <tr>
+        <td colspan="2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+       </tr>
+       <tr>
+         <td colspan="5">Purpose of Loan</td>
+       </tr>
+       <tr>
+         <td colspan="3">
+           <p><input type="checkbox" id="home-renovation" name="home-renovation">Home Renovation/ Home improvement</p>
+            <p><input type="checkbox" id="investments" name="investments">Investments</p>
+             <p><input type="checkbox" id="Education-Purpose" name="Education-Purpose">Education Purpose</p>
+              <p><input type="checkbox" id="Children-Education" name="Children-Education">Children 's Education</p>
+         </td>
+         <td colspan="2">
+           <p><input type="checkbox" id="expense" name="expense">Medical / Hospital Expenses</p>
+           <p><input type="checkbox" id="event" name="event">For any Social event</p>
+           <p><input type="checkbox" id="equipment" name="equipment">Purchase Of Equipment / Car or others</p>
+           <p><input type="checkbox" id="marriage" name="marriage">Marriage/ Marriage in family</p>
+         </td>
+       </tr>
+       <tr>
+         <td colspan="5">
+           Any other resaons -------- please specify
+         </td>
+       </tr>
+       <tr>
+        <td colspan="5">
+          Enclosed Nos.of documents list along with Application 
+          <p>1.</p>
+          <p>2.</p>
+          <p>3.</p>
+          <p>4.</p>
+        </td>
+       </tr>
+       <tr>
+        <td colspan="4">
+          Outstanding loan ,if any please describe details
+        </td>
+        <td style="vertical-align: bottom;">
+          employee Sign
+        </td>
+       </tr>
+       <tr>
+         <td colspan="2">Loan Approved /Rejected </td>
+         <td colspan="2">Department Manager Sign</td>
+         <td>Approved By &amp; Sign</td>
+       </tr>
+     </table>
   <button type="button" class="btn btn-primary my-5">Submit</button>
     </form>
     <div class="clearfix"></div>
