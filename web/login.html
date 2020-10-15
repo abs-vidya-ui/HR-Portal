@@ -29,14 +29,14 @@
 				<form action="/">
   <div class="form-group">
     <label for="Name">UserName*</label>
-    <input type="text" class="form-control"  id="Name" required autocomplete="off">
+    <input type="text" class="form-control" name="Name" id="Name" required autocomplete="off">
   </div>
   <div class="form-group">
     <label for="pwd">Password*</label>
-    <input type="password" class="form-control"  id="pwd" required autocomplete="off">
+    <input type="password" class="form-control"  name = "pwd" id="pwd" required autocomplete="off">
   </div>
   
-  <button type="submit" class="btn login-s mx-auto d-block text-uppercase">Login</button>
+  <button type="submit" class="btn login-s mx-auto d-block text-uppercase" id="submit">Login</button>
 </form>
 
 			
@@ -47,5 +47,25 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/function.js"></script>
+<script type="text/javascript">
+  $('#submit').on('click', function() {
+    var valid = true,
+        message = '';
+
+    $('form input').each(function() {
+        var $this = $(this);
+
+        if(!$this.val()) {
+            var inputName = $this.attr('name');
+            valid = false;
+            message += 'Please enter your ' + inputName + '\n';
+        }
+    });
+
+    if(!valid) {
+        alert(message);
+    }
+});
+</script>
 </body>
 </html>
